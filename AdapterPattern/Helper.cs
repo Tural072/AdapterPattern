@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdapterPattern.Adapter
+namespace AdapterPattern
 {
-    public interface IAdapter
+    public class Helper
     {
-        void Write();
-        void Read();
+        public static MainWindow MainWindow { get; set; }
     }
 }

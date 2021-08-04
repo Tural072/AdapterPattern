@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdapterPattern.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,8 +24,10 @@ namespace AdapterPattern
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
+            Helper.MainWindow = this;
         }
 
-       
+        
     }
 }

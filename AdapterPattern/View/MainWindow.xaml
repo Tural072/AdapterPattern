@@ -9,14 +9,14 @@
         WindowStartupLocation="CenterScreen"
         >
     <StackPanel Background="DeepSkyBlue">
-        <TextBlock FontSize="20" Text=" Name" Margin="5"></TextBlock>
-        <TextBox x:Name="nameTxtb" FontSize="20" Margin="5"></TextBox>
+        <TextBlock FontSize="20" Text=" Name" Margin="5" ></TextBlock>
+        <TextBox x:Name="nameTxtb" FontSize="20" Margin="5" Template="{StaticResource TextBoxBaseControlTemplate}"></TextBox>
         <TextBlock FontSize="20" Text=" Surename" Margin="5"></TextBlock>
-        <TextBox x:Name="surenameTxtb" FontSize="20" Margin="5"></TextBox>
+        <TextBox x:Name="surenameTxtb" FontSize="20" Margin="5" Template="{StaticResource TextBoxBaseControlTemplate}"></TextBox>
         <TextBlock FontSize="20" Text=" Email" Margin="5"></TextBlock>
-        <TextBox x:Name="mailTxtb" FontSize="20" Margin="5"></TextBox>
-        <CheckBox FontSize="12" Margin="5" Name="xmlRadio">XML</CheckBox>
-        <CheckBox FontSize="12" Margin="5" Name="jsonRadio">JSON</CheckBox>
-        <Button FontSize="20" Margin="5" Name="saveBtn">SAVE</Button>
+        <TextBox x:Name="mailTxtb" FontSize="20" Margin="5" Template="{StaticResource TextBoxBaseControlTemplate}"></TextBox>
+        <CheckBox FontSize="12" Margin="5" Name="xmlCheckbox">XML</CheckBox>
+        <CheckBox FontSize="12" Margin="5" Name="jsonCheckbox">JSON</CheckBox>
+        <Button FontSize="20" Margin="5" Name="saveBtn" Command="{Binding SaveCommand}" Style="{StaticResource InformButton}">SAVE</Button>
     </StackPanel>
 </Window>
