@@ -67,6 +67,7 @@ namespace AdapterPattern.ViewModel
                 {
                     try
                     {
+                        MessageBox.Show("XML File Is Ready!");
                         if (XML_File.User_List == null)
                         {
                             XML_File.User_List.Add(new User()
@@ -111,6 +112,7 @@ namespace AdapterPattern.ViewModel
                 {
                     try
                     {
+                        MessageBox.Show("JSON File Is Ready!");
                         if (JSON_File.User_List == null)
                         {
                             JSON_File.User_List.Add(new User()
